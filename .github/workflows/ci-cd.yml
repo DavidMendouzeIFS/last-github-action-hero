@@ -35,8 +35,11 @@ jobs:
         name: Terminator - Tests unitaires
         if: ${{ !cancelled() }}
         run: npm test
-
-      # TODO CI - 5. Commando : build
+      - id: build
+        name: Build
+        run: <TODO-ajouter-commande>
+        env:
+          VITE_COMMIT: ${{ github.sha }} # déclaration d'une variable d'environnement accessible au runner
 
       # TODO CI - 6. Résumé 1ère mission -> Github Markdown
 
