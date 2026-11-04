@@ -111,7 +111,7 @@ Dans le workflow Github, ajoutez à l'endroit indiqué l'étape suivante (bien f
     run: npm run lint
 ```
 
-Commen énoncé précedemment, la commande `run` d'une étape permet de déclencher un commande dans le `shell` du `runner` (la machine virtuelle Ubuntu).
+Comme énoncé précedemment, la commande `run` d'une étape permet de déclencher un commande dans le `shell` du `runner` (la machine virtuelle Ubuntu).
 
 > [!IMPORTANT]
 > Ajoutez l'étape à l'endroit indiqué par `# TODO 3. Die Hard : vérification statique`
@@ -161,7 +161,7 @@ Voici le code pour ajouter le lancement des tests unitaires :
 
 ![Gif extrait Terminator 1 "Sarah Connor" ?](./git-assets/sarah-connor.gif)
 
-### 5. Commando, établissement du QG -> création du buile de production
+### 5. Commando, établissement du QG -> création du build de production
 
 Seulement les étapes de `lint` et de `test` sont **OK** alors la tranpilation du projet peut commencer.
 
