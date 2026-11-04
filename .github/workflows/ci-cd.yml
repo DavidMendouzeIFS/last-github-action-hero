@@ -37,7 +37,7 @@ jobs:
         run: npm test
       - id: build
         name: Build
-        run: <TODO-ajouter-commande>
+        run: npm run build
         env:
           VITE_COMMIT: ${{ github.sha }} # déclaration d'une variable d'environnement accessible au runner
 
