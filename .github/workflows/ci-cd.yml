@@ -22,12 +22,15 @@ jobs:
   ci: # Nom du job
     runs-on: ubuntu-26.04 # Machine "ubuntu" fournie par Github
     steps:
-      # TODO CI - 2.1. Récupération de l'équipement
-
-      # TODO CI - 2.2 Préparation de l'équipe
-
-
-      # TODO CI - 3. Die Hard : vérification statique
+      - uses: actions/checkout@v7 # récupération du code
+      - uses: actions/setup-node@v7 # configuration de NodeJS
+        with:
+          node-version: 24 # sélection de la version
+          cache: npm
+      - run: npm ci # PREMIÈRE COMMANDE : installation des dépendances du projet sur le RUNNER
+      - id: lint
+        name: Die Hard - Vérification statique - Lint
+        run: npm run lint      
 
       # TODO CI - 4. Terminator : tests unitaires
 
